@@ -1,0 +1,15 @@
+{% extends 'basic.html' %}
+{% block title %} Verify {% endblock %}
+{% block body %} 
+<script>{{js}}</script>
+<h1 style="display: flex; justify-content: center;"><u>Verify Please</u></h1>
+<div class="container" style="justify-content: center; text-align:center; margin-top: 1%;">
+    <form action="/verify/{{email}}" method="post" data-autosubmit="false" autocomplete="off">
+        <input style="border-radius: 7px; background-color: #1cbd95;" autocomplete="false" type="text" name="otp" maxlength="6" placeholder="######">
+        <button style="color: rgb(44 28 107);
+        justify-content: center;
+        border-radius: 10%;" type="submit">Check OTP</button>
+    </form>
+</div>
+
+    {% endblock %}
