@@ -1,5 +1,4 @@
 flask
-sqlite3
 pyotp
 datetime
 gunicorn
